@@ -1,0 +1,46 @@
+{% extends 'inspection_module/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="main-content-container">
+    <div class="container">
+        <div class="main-content-container-box">
+            <div class="main-content-inner-boxes loging_div">
+                <div class="main-content-inner-box-filter">
+                    <h2 style="text-align: center;" class="main-content-inner-box-filter-heading">Login</h2>
+                    <form id="login_form" action="{% url 'login-user' %}" method="POST">
+                        {% csrf_token %}
+                        {% if messages %}
+                          <ul class="error_messages">
+                            {% for message in messages %}
+                              <li class="bg-danger text-white">{{ message }}</li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                        <div class="row">
+                            <div class="col-md-12 inspection_input">
+                                <label for="login_username">Username</label>
+                                <input type="text" id="login_username" name="username">
+                            </div>
+
+                            <div class="col-md-12 inspection_input">
+                                <label for="login_password">Password</label>
+                                <input type="password" id="login_password" name="password">
+                            </div>
+
+                            <div class="col-md-12">
+                                <p>Don't have an account ? <a href="{% url 'signup' %}">Sign Up</a></p>
+                            </div>
+
+                            <div style="text-align: center;" class="col-md-12 inspection_input">
+                                <button class="main-content-inner-box-export-btn" style="outline: none;">Submit</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

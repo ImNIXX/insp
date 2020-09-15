@@ -1,0 +1,1037 @@
+@font-face {
+    font-family: 'timesbold_italic';
+    src: url('../fonts/times_new_roman_bold_italic.woff2') format('woff2'),
+         url('../fonts/times_new_roman_bold_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'times_new_roman_cyrbold';
+    src: url('../fonts/times_new_roman_bold.woff2') format('woff2'),
+         url('../fonts/times_new_roman_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'times_new_romanitalic';
+    src: url('../fonts/times_new_roman_italic.woff2') format('woff2'),
+         url('../fonts/times_new_roman_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'times_new_roman_cyrregular';
+    src: url('../fonts/times_new_roman.woff2') format('woff2'),
+         url('../fonts/times_new_roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: roboto;
+}
+
+p, ul {
+    font-size: 16px;
+    color: #929292;
+    line-height: 26px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.clear{
+    clear: both;
+}
+
+.header_div{
+    width: 100%;
+}
+
+.top_header {
+    width: 100%;
+    display: inline-block;
+    background: #6ab42f;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px 0;
+  background-color: #fff;
+  color: white;
+}
+
+.modal-body {padding: 2px 0px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.draft-a:hover{
+    cursor: pointer;
+}
+/*---------------RCA FORM PDF--------------*/
+.header-alberta label{
+    width: 60%;
+    float: left;
+    text-align: right;
+    display: inline-block;
+}
+.header-alberta input{
+    width: 40%;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 5px;
+    height: 20px;
+    border: 0;
+    outline: none
+    background-color: yellow;
+    font-style: italic
+}
+table.bb-tbl{
+    border: 0;
+}
+.bb-tbl tr td{
+    border: 0;
+    border-bottom: 1px solid #ccc !important;
+}
+.inside-tbl-bt td{
+    border: 0;
+    border-top: 1px solid #ccc
+}
+.col-sm-6 {
+    width: 50%;
+    float: left;
+}
+.ABSP-checkbox input{
+    width: fit-content;
+    width: -moz-fit-content;
+}
+#ins-report_filter label, #cor-report_filter label {
+    float: right;
+    display: flex;
+    vertical-align: middle;
+    height: 30px;
+}
+.draft-corrective{
+    width: fit-content;
+    width: -moz-fit-content;
+}
+input.form-control.input-sm {
+    width: 100%;
+    flex-shrink: 1;
+    vertical-align: middle;
+    margin: 0 0 0 9px;
+    padding: 7px 15px;
+}
+.tbl-mt{
+    margin-top: -1px !important;
+}
+.tbl-mb{
+    margin-bottom: -1px !important;
+}
+.right-contant p{
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    color: #333
+}
+.location-emergency td:first-child{
+    width: 30%
+}
+.generic-safe label{
+    width: 100px !important;
+}
+.ch-label input{
+    width: fit-content;
+    width: -moz-fit-content;
+    vertical-align: middle;
+}
+label.ch-label{
+    padding-left: 20px;
+    width: unset !important;
+}
+.content {
+    padding: 5px 0;
+}
+.checkbox-wrap{
+    width: 110px !important;
+}
+.equipment-page .single-line-checkbox label{
+    width: 80px;
+}
+.equipment-page .single-line-checkbox input{
+    width: fit-content;
+    width: -moz-fit-content;
+}
+.description-content{
+    padding-bottom: 20px;
+}
+.description-content-second{
+    padding-top: 20px;
+    border-top: 2px solid #000;
+}
+.description-content p{
+    color: #000;
+    line-height: 1.7
+}
+.description-content span{
+    font-weight: 600;
+    background-color: yellow
+}
+.lr-border-zero td:first-child{
+    border-left: 0;
+}
+.lr-border-zero td:last-child{
+    border-right: 0;
+}
+.lr-border-zero{
+    border: 0 !important;
+}
+.full-field-wrap label, .full-field-wrap input{
+    width: 100%;
+}
+.full-field-wrap input{
+    border-width: 0 0 1px 0;
+    border-color: #ccc;
+    padding: 5px 0;
+    outline: none;
+}
+.lr-border-zero .single-line-checkbox{
+    padding: 0 10px 0 0;
+}
+.lr-border-zero .single-line-checkbox input{
+    width: fit-content;
+    width: -moz-fit-content;
+    vertical-align: middle;
+}
+.lr-border-zero td{
+    width: 25%;
+}
+.moc-form .lr-border-zero td{
+    width: unset;
+}
+.header-inner {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid#818181;
+}
+
+.logo {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-top: 5px;
+}
+.right-contant {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    padding-top: 5px;
+    border-left: 1px solid#818181;
+}
+
+.right-contant h4 {
+    font-weight: 300;
+    font-size: 20px;
+}
+.right-contant h4 span {
+    background-color: #ffff00;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.top-link {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.top-link h2 {
+    text-align: center;
+    font-size: 24px;
+    padding: 22px 0 10px 0;
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #215868;
+}
+.container-category{
+    width: 90%;
+    margin: auto;
+}
+.ABSP-form-block label {
+    float: left;
+    width: fit-content;
+    width: -moz-fit-content;
+    text-align: left
+}
+.ABSP-form-block th {
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+.fright{
+    float: right;
+}
+.tleft{
+    text-align: left !important;
+}
+.ABSP-form-block input::placeholder {
+    color: #333;
+    font-size: 16px;
+}
+.form-group input::placeholder{
+    font-size: 14px;
+}
+.tbold{
+    font-weight: bold;
+}
+
+.inspection-tbl tr td:nth-child(2) {
+    text-align: left;
+}
+.ABSP-form-block ul{
+    margin: 0;
+}
+.ABSP-form-block li{
+    text-align: left;
+    line-height: 1.4;
+    color: #333;
+}
+.compressed-tbl tr td:last-child{
+    text-align: left;
+}
+.fleft{
+    float: left;
+}
+.pzero{
+    padding: 0 !important;
+}
+.tcenter{
+    text-align: center !important;
+}
+.RCA-form-pdf table {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.RCA-form-pdf td {
+    border: 1px solid #bbb;
+    padding: 7px;
+    text-align: center;
+}
+.field-wrap {
+  width: 100%;
+  display: flex;
+}
+.field-wrap input {
+  width: 100%;
+  flex-grow: 1;
+  height: 20px;
+  border: 0 !important;
+  outline: none;
+  font-size: 16px;
+  padding: 0px 0 !important;
+  margin: 0 !important
+}
+.field-wrap label {
+  margin-right: 10px;
+  width: fit-content;
+  flex-shrink: 0
+}
+.border-zero{
+    border: 0 !important;
+    outline: none;
+}
+.RCA-form-pdf p{
+    text-align: left;
+    padding: 0px 0 8px 0;
+    color: #000;
+}
+.RCA-form-pdf h4{
+    text-align: left;
+}
+.single-line-checkbox {
+    width: fit-content;
+    float: left;
+    padding: 0px 20px 0px 0px;
+}
+.RCA-form-pdf label.full-label {
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding: 3px 0 10px 0;
+}
+.RCA-form-pdf textarea{
+    width: 99%;
+    height: 100px;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.RCA-form-pdf td.td-heading {
+    font-weight: bold;
+    background-color: #ccc;
+}
+.inside-tbl{
+    margin: 0 !important;
+    border: 0 !important
+}
+.inside-tbl-td{
+    padding: 0 !important;
+    border: 0 !important
+}
+.inside-tbl td{
+    border: 0;
+    width: 20%;
+    text-align: left;
+    padding: 5px 0px;
+    vertical-align: top;
+}
+.border-tbl td{
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: #ccc;
+    padding: 5px;
+}
+.inside-tbl td:first-child,.inside-tbl td:last-child {
+    border: 0;
+}
+
+.input-bt-br textarea,.input-bt-br input{
+    border-bottom: 1px solid #ccc !important;
+}
+.mini-table{
+    margin: 0 !important
+}
+.mini-table input {
+    border: 0 !important;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+.space-tbl tr td:first-child{
+    text-align: left;
+}
+.daily-excavation-tbl td:nth-child(2){
+    text-align: left;
+}
+.field-wrap input[type="checkbox"] {
+    height: auto;
+    width: fit-content;
+    margin: 0 5px !important;
+}
+.mobile-equipment-tbl tr td:first-child{
+    text-align: left;
+}
+.mobile-equipment-tbl ul{
+    margin: 0;
+    list-style-type: none;
+}
+.mobile-equipment-tbl ul li{
+    text-indent: -15px;
+}
+.mobile-equipment-tbl ul li::before{
+    content: "-";
+    display: inline-block;
+}
+.emergency-rescue-plan-tbl tr td:nth-child(4n+1){
+    text-align: left;
+}
+.emergency-rescue-tbl td:nth-child(2){
+    text-align: left;
+}
+tr.br-bt{
+    border-bottom: 1px solid #ccc !important;
+}
+.tbl-text-left td{
+    text-align: left;
+}
+.responsive-tbl td{
+    display: table-cell;
+    font-size: 14px;
+}
+.single-line-checkbox input {
+    width: fit-content;
+    margin: 5px;
+    border: 0;
+    vertical-align: middle;
+}
+.worksheet-calculation {
+    text-align: center;
+}
+.center-checkbox .single-line-checkbox{
+    float: none;
+    margin: auto;
+    padding: 0;
+}
+.worksheet-calculation p {
+    width: fit-content;
+    display: inline-block;
+}
+.worksheet-calculation input {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ccc;
+    outline: none;
+    width: 15%;
+    padding: unset;
+}
+input[type="radio"]{
+    border: 0;
+}
+.tbl-left-all td{
+    text-align: left;
+}
+tbody#draft-name-tbl tr:nth-child(even) td {
+    padding: 0;
+    border: 0;
+}
+.corrective-action-new {
+    padding: 10px 0px;
+}
+.corrective_name {
+    padding: 5px 0;
+    border-bottom: 1px solid #cecece;
+    display: flow-root;
+}
+
+
+
+
+
+
+
+/***responsive***/
+@media screen and (min-width: 320px) and (max-width: 400px) {
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+.draft_action .inspection-form input[type="text"] {
+    width: 89%;
+    padding: 8px;
+}
+
+.draft_action  .inspection-form {
+    padding: -5px 0;
+    width: 100%;
+    min-height: 40px;
+}
+.container {
+    width: 90%;
+}
+.modal-content{
+    width: 94% !important;
+}
+.inspection-modal{
+    width: 250px;
+    padding: 20px;
+}
+.inspection-modal-block{
+    float: unset;
+}
+.inspection-modal-block:last-child{
+    padding: 10px 0 0 0;
+}
+.location-emergency td:first-child{
+    width: 100%
+}
+
+/*--------------> RCA FORM PDF -------------*/
+.container{
+    width: 90%;
+}
+.RCA-form-pdf td{
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+.RCA-form-pdf textarea{
+    width: 92%;
+    height: 60px;
+}
+.inside-tbl td{
+    width: -webkit-fill-available;
+    float: left;
+}
+.single-line-checkbox{
+    width: 100%;
+    text-align: left;
+}
+.RCA-form-pdf td.td-heading{
+    width: -webkit-fill-available
+}
+/*--------------RCA FORM PDF <------------*/
+
+.safe-form h3{
+    font-size: 20px;
+}
+.form-icon button{
+    width: 22px;
+    margin: 0 5.5%;
+}
+.form-icon i{
+    padding: 4px 4px;
+    width: 12px;
+    font-size: 12px;
+}
+.form-icon p{
+    font-size: 12px;
+    width: 65px;
+}
+.form-icon hr.hr{
+    width: 78%;
+    top: 23px;
+    left: 22px;
+}
+.formtwo .inspection-form:nth-child(7) select{
+    width: 87% !important;
+}
+.form-icon{
+    padding: 20px 0;
+}
+fieldset{
+    padding: 0
+}
+.form-one-search{
+    padding: 0;
+}
+.form-one-search p{
+    padding: 10px;
+    text-align: left;
+    padding-top: 0;
+    font-size: 13px;
+}
+.search-input{
+    width: 85%;
+}
+.form-one-search h3{
+    padding: 12px;
+    padding-bottom: 0;
+}
+.safe-form form{
+    padding: 10px;
+    padding-top: 0;
+    display: inline-block;
+}
+.form-one-search input{
+    width: 89% !important;
+    padding: 8px !important;
+    margin: 0;
+    vertical-align: middle;
+}
+.inspection-form{
+    min-height: unset;
+}
+.print-table h2 {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.form-one-search i.fa.fa-search{
+    padding: 8.5px;
+    font-size: 14px;
+}
+.filter-form{
+    width: 100%;
+    padding: 10px 0;
+}
+.filter-form select{
+    margin: 0;
+    padding: 10px;
+    width: 84% !important;
+    vertical-align: middle;
+}
+.filter-form i{
+    padding: 10.5px 0;
+    width: 30px;
+}
+button.export-btn{
+    width: 170px;
+    margin: 10px;
+    font-size: 13px;
+    padding: 10px;
+}
+.print-table{
+    padding: 10px;
+    overflow-x: auto;
+    width: 265px;
+    margin: auto;
+}
+.inspection-new{
+    display: block;
+}
+.print-table table{
+    font-size: 14px;
+}
+.print-table th{
+    padding: 8px 14px;
+}
+.print-table td{
+    padding: 8px 14px;
+}
+.inspection-form{
+    padding: 10px 0;
+    width: 100%;
+}
+.inspection-form i{
+    padding: 7.5px 0;
+    width: 10%;
+    text-align: center;
+}
+.corrective-action-new .inspection-form i{
+    padding: 8.5px 0;
+}
+.inspection-form select{
+    padding: 7px;
+    vertical-align: middle;
+    margin: 0;
+    width: 89% !important;
+}
+.emergency-block i{
+    text-align: center;
+    padding: 7.5px 0;
+    width: 10%;
+}
+.add-more-corrective-form i {
+    padding: 8.5px 0;
+}
+.emergency-block{
+    width: 100%;
+    padding: 10px 0;
+}
+.emergency-block input[type="text"]{
+    width: 87% !important;
+}
+.correction-block {
+    width: 100%;
+    padding: 10px 0;
+    display: inline-block;
+}
+.correction-block textarea{
+    margin: 0;
+    width: 99%;
+    padding: 10px;
+    font-size: 12px;
+    min-height: 70px;
+}
+.corrective-sub-block{
+    width: 100%;
+}
+.corrective-sub-block:first-child{
+    padding-bottom: 10px;
+}
+.deficiencies-input{
+    padding: 10px 0;
+}
+.deficiencies-input input[type="text"] {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+}
+.formthree h4 {
+    padding: 10px 10px 0 10px;
+}
+.form-one-search h5 {
+    padding: 10px;
+}
+.formthree-icon {
+    padding: 10px;
+    text-align: center;
+    padding-top: 0;
+}
+select.select-correction {
+    width: 85%;
+}
+i.correction-icon{
+
+}
+.formthree button{
+    margin-right: 0;
+    width: 100%;
+}
+.formfive button {
+    margin: 10px;
+    width: 92%;
+    margin-top: 0;
+}
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px){
+    .right-contant .field-wrap input {
+    height: 21px;
+    padding: -1px !important;
+    background-color: yellow;
+}
+    .container{
+        width: 90%;
+    }
+    .ABSP-form-block h3{
+        font-size: 18px;
+    }
+    .ABSP-form-block {
+        display: inline-block;
+        width: 100%;
+    }
+    .sm-ABSP-form-block form{
+        padding: 10px;
+    }
+    .input-block {
+       margin: 0 0 10px 0;
+       width: 100%;
+       float: none;
+    }
+    .input-block input{
+        width: 96% !important;
+        padding: 8px !important;
+    }
+    .sm-ABSP-form-block h4{
+        font-size: 15px;
+    }
+    .sm-ABSP-form-block{
+        margin-bottom: 20px;
+    }
+    input[type="checkbox"] {
+       width: fit-content !important;
+    }
+    .single-line-checkbox{
+        width: 50%;
+        margin: 2px 0;
+        font-size: 14px;
+        padding: 0;
+    }
+    .sm-ABSP-form-block textarea{
+        padding: 8px;
+        font-size: 12px;
+        width: 96%;
+    }
+    .ABSP-checkbox{
+        width: 50%;
+        font-size: 14px;
+    }
+    .sm-ABSP-form-block p{
+        font-size: 14px;
+    }
+    .ABSP-checkbox-two{
+        font-size: 14px;
+    }
+    .pre-job-fast{
+        width: 26%;
+    }
+    .fast-box-recever{
+        width: 95%;
+    }
+    .fast-box-sig span{
+        width: 20%;
+    }
+    .fast-box-sig input.recever-name-box{
+        width: 80%;
+    }
+    .fast-box-recever span{
+        width: 45%;
+    }
+    .recever-name-box{
+        width: 55%;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 767px) {
+.location-emergency td:first-child{
+    width: 100%;
+}
+.inside-tbl td {
+    /* width: 100%; */
+    float: left;
+}
+.right-contant .field-wrap label {
+    font-size: 14px;
+    float: right;
+    margin-left: 97px;
+    margin-bottom: 3px;
+}
+.logo {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-top: 34px;
+}
+.print-table h2 {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+/*--------------RCA FORM------------*/
+.ABSP-form-block h3{
+    font-size: 18px;
+}
+.ABSP-form-block {
+    display: inline-block;
+    width: 100%;
+}
+.sm-ABSP-form-block form{
+    padding: 10px;
+}
+.input-block {
+   margin: 0 0 10px 0;
+   width: 100%;
+   float: none;
+}
+.input-block input{
+    width: 100% !important;
+    padding: 8px !important;
+}
+.sm-ABSP-form-block h4{
+    font-size: 14px;
+}
+.sm-ABSP-form-block{
+    margin-bottom: 20px;
+}
+input[type="checkbox"] {
+   width: fit-content !important;
+}
+.single-line-checkbox{
+    width: 50%;
+    margin: 2px 0;
+    font-size: 14px;
+}
+.sm-ABSP-form-block textarea{
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+}
+.ABSP-checkbox{
+    width: 50%;
+    font-size: 14px;
+}
+.sm-ABSP-form-block p{
+    font-size: 14px;
+}
+.ABSP-checkbox-two{
+    font-size: 14px;
+}
+
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+.draft_action .corrective-sub-block {
+    width: 47%;
+    float: left;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+.inspection-form i {
+    width: 9px;
+    padding: 12.5px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    margin-right: -6px;
+}
+.filter-form i {
+    padding: 13.5px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    margin-right: -5px;
+    width: 5%;
+    text-align: center;
+}
+.filter-form select {
+    display: inline-block;
+    width: 83% !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 13px;
+}
+.container {
+    width: 95%;
+}
+
+.footer_box1 {
+    width: 31%;
+}
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .container {
+      width: 94%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1324px) {
+
+}

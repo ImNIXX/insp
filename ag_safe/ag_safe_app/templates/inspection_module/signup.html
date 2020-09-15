@@ -1,0 +1,59 @@
+{% extends 'inspection_module/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="main-content-container">
+    <div class="container">
+        <div class="main-content-container-box">
+
+            <div class="main-content-inner-boxes loging_div">
+                <div class="main-content-inner-box-filter">
+                    <h2 style="text-align: center;" class="main-content-inner-box-filter-heading">Sign Up</h2>
+                    <form method="POST" action="{% url 'add-user' %}" id="sign_up_form">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-12 inspection_input">
+                                <label for="reg_name">Name</label>
+                                <input type="text" id="reg_name" name="name">
+                            </div>
+
+                            <div class="col-md-12 inspection_input">
+                                <label for="reg_username">Username</label>
+                                <input type="text" id="reg_username" name="username" data-url="{% url 'check-username' %}">
+                            </div>
+
+                            <div class="col-md-12 inspection_input">
+                                <label for="reg_email">Email</label>
+                                <input type="text" id="reg_email" name="email">
+                            </div>
+
+                            <div class="col-md-12 inspection_input">
+                                <label for="reg_pass">Password</label>
+                                <input type="password" id="reg_pass" name="password">
+                            </div>
+                            <div class="col-md-12 inspection_input">
+                                <label for="reg_cpass">Confirm Password</label>
+                                <input type="password" id="reg_cpass" name="cpassword">
+                            </div>
+
+                            <div class="col-md-12 inspection_input">
+                                <label for="reg_zip">Zipcode</label>
+                                <input type="text" id="reg_zip" name="zipcode">
+                            </div>
+
+                            <div class="col-md-12 inspection_input">
+                                <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+                            </div>
+
+                            <div style="text-align: center;" class="col-md-12 inspection_input">
+                                <button class="main-content-inner-box-export-btn" style="outline: none;">Sign Up</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

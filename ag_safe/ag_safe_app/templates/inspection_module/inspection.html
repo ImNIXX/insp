@@ -1,0 +1,535 @@
+{% extends 'inspection_module/base.html' %}
+{% load static %}
+{% block content %}
+<section class="main-content-container">
+		<div class="container">
+			<div class="main-content-container-box">
+				<div class="main-content-top-side-nav-icon-box">
+					<div class="row">
+						<div class="col-md-2 col-sm-3 col-4 mb-3">
+							<span class="main-content-nav-list-icons"><i class="fas fa-home"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4 mb-3">
+							<span class="main-content-nav-list-icons"><i class="fas fa-plus"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4 mb-3">
+							<span class="main-content-nav-list-icons"><i class="fas fa-file-alt"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4 mb-3">
+							<span class="main-content-nav-list-icons"><i class="fas fa-running"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4 mb-3">
+							<span class="main-content-nav-list-icons"><i class="fas fa-file-contract"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4 mb-3">
+							<span class="main-content-nav-list-icons"><i class="fas fa-file-alt"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4">
+							<span class="main-content-nav-list-icons"><i class="fas fa-running"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4">
+							<span class="main-content-nav-list-icons"><i class="fas fa-file-contract"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4">
+							<span class="main-content-nav-list-icons"><i class="fas fa-file-alt"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4">
+							<span class="main-content-nav-list-icons"><i class="fas fa-running"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4">
+							<span class="main-content-nav-list-icons"><i class="fas fa-file-contract"></i></span>
+						</div>
+						<div class="col-md-2 col-sm-3 col-4"></div>
+					</div>
+				</div>
+				<div class="main-content-box">
+					<div id="nav-container">
+						<div class="main-content-nav">
+							<ul class="main-content-nav-list">
+								<li>
+									<span class="main-content-nav-list-icons">
+										<a><i class="fas fa-home safe-tab-btn" data-name="home_tab"></i></a>
+									</span>
+									<a class="main-content-nav-list-anchor-text safe-tab-btn" data-name="home_tab">Home
+<!--										<img src="{%static 'images/main_right_arrow.png' %}" class="main-right-arrow">-->
+									</a>
+								</li>
+								<li>
+									<span class="main-content-nav-list-icons">
+										<a><i class="fas fa-plus safe-tab-btn" data-name="new_ins_tab"></i></a>
+									</span>
+									<a class="main-content-nav-list-anchor-text safe-tab-btn" data-name="new_ins_tab">New </a>
+								</li>
+								<li>
+									<span class="main-content-nav-list-icons">
+										<a><i class="fas fa-file-alt safe-tab-btn" data-name="draft_tab"></i></a>
+									</span>
+									<a class="main-content-nav-list-anchor-text safe-tab-btn" data-name="draft_tab">Draft </a>
+								</li>
+								<li>
+									<span class="main-content-nav-list-icons">
+										<a><i class="fas fa-running safe-tab-btn" data-name="action_tab"></i></a>
+									</span>
+									<a class="main-content-nav-list-anchor-text safe-tab-btn" data-name="action_tab">Action </a>
+								</li>
+								<li>
+									<span class="main-content-nav-list-icons">
+										<a><i class="fas fa-file-contract safe-tab-btn" data-name="reports_tab"></i></a>
+									</span>
+									<a class="main-content-nav-list-anchor-text safe-tab-btn" data-name="reports_tab">Reports </a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav-toggle" id="nav-toggle">Collapse</div>
+					</div>
+
+					<div id="main-container">
+						<div class="home_div common_tab home_tab">
+							<div class="main-content-inner-boxes">
+								<div class="main-content-inner-box-search">
+									<h2 class="main-content-inner-box-search-heading">Search</h2>
+									<label for="main-content-inner-box-search-label">Keywords</label>
+									<span class="main-content-inner-box-search-input-box">
+										<input type="text" id="main-content-inner-box-search-label" placeholder="Search" class="main-content-inner-box-search-field">
+										<img src="{%static 'images/search.png' %}" class="main-content-inner-box-search-icon">
+									</span>
+								</div>
+							</div>
+							<div class="main-content-inner-boxes">
+								<div class="main-content-inner-box-filter">
+									<h2 class="main-content-inner-box-filter-heading">Filters for search</h2>
+									<div class="row">
+
+										<div class="col-md-6 inspection_input">
+											<label>Operating area</label>
+											<select name="facility">
+												<option>Select Operating Area</option>
+												<option>Operating area</option>
+												<option>Operating area</option>
+												<option>Operating area</option>
+												<option>Operating area</option>
+											</select>
+										</div>
+										<div class="col-md-6 inspection_input">
+											<label>Facility</label>
+											<select name="facility">
+												<option value="">Select Facility</option>
+												<option value="">Facility</option>
+											</select>
+										</div>
+										<div class="col-md-6 inspection_input">
+											<label>Location</label>
+											<select name="facility">
+												<option>Select Location</option>
+												<option>Location</option>
+												<option>Location</option>
+												<option>Location</option>
+												<option>Location</option>
+											</select>
+										</div>
+
+										<div class="col-md-6 inspection_input">
+											<label>Categories</label>
+											<select name="facility">
+												<option>Categories</option>
+												<option>Categories</option>
+												<option>Categories</option>
+												<option>Categories</option>
+												<option>Categories</option>
+											</select>
+										</div>
+										<div class="col-md-6 inspection_input">
+											<label>Type</label>
+											<select name="facility">
+												<option>Type</option>
+												<option>Type</option>
+												<option>Type</option>
+												<option>Type</option>
+												<option>Type</option>
+											</select>
+										</div>
+										<div class="col-md-6 inspection_input">
+											<label>Corrective Action Status</label>
+											<select name="facility">
+												<option>Corrective Action Status</option>
+												<option>Corrective Action Status</option>
+												<option>Corrective Action Status</option>
+												<option>Corrective Action Status</option>
+												<option>Corrective Action Status</option>
+											</select>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+							<div class="main-content-inner-boxes">
+								<div class="main-content-inner-box-export">
+									<h2 class="main-content-inner-box-export-heading">Export to PDF/Word/Excel</h2>
+									<BUTTON class="main-content-inner-box-export-btn" style="outline: none;">Export PDF/Word/Excel</BUTTON>
+								</div>
+							</div>
+						</div>
+
+						<div class="new_inspection common_tab new_ins_tab dis_none">
+							<div class="main-content-inner-boxes">
+								<div class="main-content-inner-box-filter inspection-add-block">
+									<h2 class="main-content-inner-box-filter-heading">New Inspection</h2>
+									<form id="inspection_form" action=""  data-url="{% url 'insert_the_inspection' %}">
+										{% csrf_token %}
+										<div class="row">
+											<div class="col-md-6 inspection_input">
+												<label>Title</label>
+												<input type="text" name="inspection_title">
+											</div>
+
+											<div class="col-md-6 inspection_input">
+												<label>Facility</label>
+												<select name="facility">
+													<option value="">Select Facility</option>
+													{% for facility_name in facility_data %}
+													<option value="{{ facility_name }}">{{ facility_name.facility }}</option>
+													{% endfor %}
+												</select>
+											</div>
+
+											<div class="col-md-6 inspection_input">
+												<label>Stakeholders Group</label>
+												<input type="text" name="stakeholders">
+											</div>
+
+											<div class="col-md-6 inspection_input">
+												<label>Type</label>
+												<select name="inspection_type">
+													<option value="">Select Type</option>
+													{% for ins_type in inspection_type %}
+													<option value="{{ ins_type.id }}">{{ ins_type.types }}</option>
+													{% endfor %}
+												</select>
+											</div>
+
+											<div class="col-md-6 inspection_input">
+												<label>Loaction</label>
+												<input type="text" name="location">
+											</div>
+
+											<div class="col-md-6 inspection_input">
+												<label>Category</label>
+												<select name="category">
+													<option value="">Select Category</option>
+													<option value="farmers">Farmers</option>
+													<option value="Seed Plants">Seed Plants</option>
+												</select>
+											</div>
+
+
+											<div class="col-md-6 inspection_input">
+												<label>Operating Area</label>
+												<input type="text" name="operating_area" value="Alberta Seed Processors">
+											</div>
+
+											<div class="col-md-6 inspection_input">
+												<label>Select Supervisor</label>
+												<select name="supervisor" class="supervisor">
+													<option value="">Select Supervisor</option>
+													{% for supervisor in supervisor_data %}
+													<option value="{{ supervisor.username }}">{{ supervisor.username }}</option>
+													{% endfor %}
+												</select>
+											</div>
+											<div class="col-md-6 inspection_input inspection_submit">
+												<button type="submit" class="main-content-inner-box-export-btn" style="outline: none;">Create</button>
+												<button type="reset" class="outline_button" style="outline: none;">Reset</button>
+											</div>
+
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="new_inspection common_tab draft_tab dis_none">
+							<div class="main-content-inner-boxes">
+								<div class="main-content-inner-box-filter">
+									<h2 class="main-content-inner-box-filter-heading">DRAFT</h2>
+									<div class="row">
+										<div class="col-md-12 inspection_input">
+											<div class="table-responsive">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Date</th>
+															<th>Inspection Title</th>
+															<th>Draft Name</th>
+														</tr>
+													</thead>
+													<tbody id="ins_draft_tbl">
+													{% for ins_data in inspections %}
+														<tr class="ins_draft_{% widthratio ins_data.id 1 9304 %}">
+															<td>{{ ins_data.datetime|date:'d-M-Y' }}</td>
+															<td><a class="ins_draft_title">{{ ins_data.inspection_title }}</a></td>
+															<td class="draft_name"><a href="#">{{ ins_data.draft_name }}</a></td>
+														</tr>
+														<tr>
+															<td colspan="3" class="p-0">
+																<div style="display:none" class="add-inspection upd_ins_{% widthratio ins_data.id 1 9304 %}">
+																</div>
+															</td>
+														</tr>
+													{% endfor %}
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="new_inspection common_tab action_tab dis_none">
+							<div class="main-content-inner-boxes">
+								<div class="main-content-inner-box-filter">
+									<h2 class="main-content-inner-box-filter-heading">ACTION</h2>
+									<div class="row">
+										<div class="col-md-12 inspection_input">
+											<h3>Inspections</h3>
+											<div class="table-responsive">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>No.</th>
+															<th>Inspection Title</th>
+															<th>Draft Name</th>
+															<th>Corrective Actions</th>
+															<th>File</th>
+															<th>Delete</th>
+															<th>Approve</th>
+														</tr>
+													</thead>
+													<tbody id="ins_action_tbl">
+														{% for ins_data in inspections %}
+														<tr class="ins_action_{% widthratio ins_data.id 1 9304 %}">
+															<td>{{ forloop.counter }}</td>
+															<td class="insp_title">{{ ins_data.inspection_title }}</td>
+															<td>{{ ins_data.draft_name }}</td>
+															<td></td>
+															<td></td>
+															<td><i class="fa fa-trash ins_delete"></i></td>
+															<td>{% if ins_data.inspection_approve == 'true' %} Approved {% else %} Not Approved {% endif %} </td>
+														</tr>
+														{% endfor %}
+													</tbody>
+												</table>
+											</div>
+											<h3>Assigned Corrective Actions</h3>
+											<div class="table-responsive">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>No.</th>
+															<th>Inspection Title</th>
+															<th>Draft Name</th>
+															<th>Corrective Actions</th>
+															<th>File</th>
+															<th>Delete</th>
+															<th>Approve</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>test</td>
+															<td>Confined</td>
+															<td>Assigned to Michael</td>
+															<td>No File</td>
+															<td>Delete</td>
+															<td>Approved</td>
+														</tr>
+														<tr>
+															<td>1</td>
+															<td>test</td>
+															<td>Confined</td>
+															<td>Assigned to Michael</td>
+															<td>No File</td>
+															<td>Delete</td>
+															<td>Approved</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="new_inspection common_tab reports_tab dis_none">
+							<div class="main-content-inner-boxes">
+								<div class="main-content-inner-box-filter">
+									<h2 class="main-content-inner-box-filter-heading">REPORTS</h2>
+									<div class="row">
+										<div class="col-md-12">
+											<h3>Inspection Reports</h3>
+											<div class="table-responsive">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Inspection	</th>
+															<th>Date</th>
+															<th>Location</th>
+															<th>Draft Name</th>
+															<th>Get draft</th>
+														</tr>
+													</thead>
+													<tbody id="ins_report_tbl">
+														{% for ins_data in inspections %}
+														<tr class="ins_report_{% widthratio ins_data.id 1 9304 %}">
+															<td class="insp_title">{{ ins_data.inspection_title }}</td>
+															<td>{{ ins_data.datetime|date:'d-M-Y' }}</td>
+															<td class="insp_location">{{ ins_data.location }}</td>
+															<td class="draft_name">{{ ins_data.draft_name }}</td>
+															<td>Click Here</td>
+														</tr>
+														{% endfor %}
+													</tbody>
+												</table>
+											</div>
+											<h3>Corrective Action Reports</h3>
+											<div class="table-responsive">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Corrective Actions</th>
+															<th>Inspection Name</th>
+															<th>Priority</th>
+															<th>Status</th>
+															<th>Expected End Date</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Assigned to Michael</td>
+															<td>test</td>
+															<td>medium</td>
+															<td>Posponed</td>
+															<td>10-Jul-2020</td>
+														</tr>
+
+														<tr>
+															<td>Assigned to Michael</td>
+															<td>test</td>
+															<td>medium</td>
+															<td>Posponed</td>
+															<td>10-Jul-2020</td>
+														</tr>
+
+														<tr>
+															<td>Assigned to Michael</td>
+															<td>test</td>
+															<td>medium</td>
+															<td>Posponed</td>
+															<td>10-Jul-2020</td>
+														</tr>
+
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary draft-save-btn" data-id="">Save changes</button>
+		  <div class="add-corr mt-4">
+			  <button class="btn btn-primary mb-2">Corrective Action</button>
+			  <div class="corr-block">
+				<h4>Add New Corrective Action</h4>
+				  <form action="">
+				  <div class="row">
+					<div class="col-md-6 inspection_input">
+						<label>Inspection Title</label>
+						<input type="text" name="inspection_title" disabled>
+					</div>
+					  <div class="col-md-6 inspection_input">
+						<div class="row">
+							<div class="col-md-6">
+							<label>Priority</label>
+							<select name="priority">
+								<option value="">Select Priority</option>
+								<option value="low">Low</option>
+								<option value="medium">Medium</option>
+								<option value="high">High</option>
+							</select>
+						</div>
+						  <div class="col-md-6">
+							<label>Status</label>
+							<select name="status">
+								<option value="">Select Status</option>
+								<option value="In Progress">In Progress</option>
+								<option value="Finalized">Finalized</option>
+								<option value="Posponed">Posponed</option>
+								<option value="Delayed">Delayed</option>
+							</select>
+						</div>
+						</div>
+					</div>
+					  <div class="col-md-6 inspection_input">
+						<label>Corrective Actions</label>
+						<input type="text" name="inspection_title">
+					</div>
+					  <div class="col-md-6 inspection_input">
+						<label>Assigned To</label>
+						  <select name="assigned_to" >
+						  <option value="">Assigned To</option>
+						  {% for user in users %}
+						  <option value="{{ user.username }}">{{ user.name }} ( {{ user.email }} )</option>
+						  {% endfor %}
+						  </select>
+					</div>
+					  <div class="col-md-6 inspection_input">
+						<label>Expected End Date</label>
+						<input type="text" name="end_date" id="end_date">
+					</div>
+					  <div class="col-md-12 inspection_input">
+						<label>Work Done</label>
+						  <textarea name="work_done" id="work_done" cols="30" rows="5"></textarea>
+					</div>
+					  <div class="col-md-12 inspection_input">
+						<button type="submit" class="main-content-inner-box-export-btn" style="outline: none;">Create</button>
+						  <button type="reset" class="outline_button" style="outline: none;">Reset</button>
+					</div>
+				  </div>
+				  </form>
+			  </div>
+		  </div>
+	  </div>
+		<div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
